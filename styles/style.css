@@ -1,0 +1,945 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg:#222831;
+    --second-bg:#31363F;
+    --warna-utama:#76ABAE;
+    --text:#EEEEEE;
+}
+
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+article {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* Header Style */
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+}
+
+.navbar a {
+    font-size: 1.9rem;
+    color: var(--text);
+    margin: 4rem;
+    transition: .3s;
+    padding: 0.3rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--bg);
+    background-color: var(--text);
+}
+
+.logo {
+    font-size: 3.6rem;
+    display: flex;
+    color: var(--text);
+    cursor: default;
+}
+
+span {
+    color: var(--warna-utama);
+}
+
+/* Beranda Style */
+.beranda {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url('../pictures/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.beranda-img img {
+    width: 70vh; 
+    color: transparent;
+}
+
+.beranda-img {
+    height: 100%;
+    overflow: hidden;
+}
+
+.beranda-content h3 {
+    padding-left: 2%;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--warna-utama);
+}
+
+.beranda-content p {
+    font-size: 1.6rem;
+    color: var(--text);
+    padding-left: 2%;
+}
+
+/* Tentang Kami Style */
+.tentang {
+    background-color: var(--second-bg);
+}
+
+.tentang h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    padding-bottom: 5rem;
+}
+
+.tentang h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.tentang p {
+    text-align: left;
+    font-size: 1.7rem;
+}
+
+.tentang img {
+    border-radius: 20%;
+    max-width: 60%;
+    height: 100%;
+    padding-left: 30px;
+}
+
+.tentang .baris {
+    display: flex;
+    flex: 1 1 20rem;
+    padding: 1 5rem;
+}
+
+.tentang .content-desk {
+    padding: 3rem;
+}
+
+/* Wisata Style */
+.wisata {
+    margin-bottom: 5rem;
+}
+
+.wisata h2,
+.kontak h2 {
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.wisata h3 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.wisata p,
+.kontak p {
+    font-size: 1.7rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.wisata .wisata-container .wisata-box img {
+    border-radius: 1.5rem;
+    width: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.wisata-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.wisata-container .wisata-box {
+    background-color: var(--second-bg);
+    text-align: center;
+    border-radius: 1.5rem;
+    flex: 1 1 25rem;
+    padding: 3rem 2rem 3rem;
+    border: .2rem solid var(--warna-utama);
+    width: 450px;
+    height: 520px;
+}
+
+.wisata .wisata-container .wisata-box .icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    padding: 1rem;
+    border-radius: .8rem;
+    color: var(--warna-utama);
+    font-size: 2rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.wisata .wisata-container .wisata-box .icon a:hover {
+    color: var(--bg);
+    background-color: var(--text);
+}
+
+.wisata .btn {
+    background-color: var(--warna-utama);
+    display: inline-block;
+    font-size: 1.7rem;
+    color: var(--text);
+    cursor: pointer;
+    margin: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.wisata .btn:hover {
+    background-color: var(--bg);
+    color: var(--warna-utama);
+}
+
+/* Kontak Style */
+.kontak {
+    margin-bottom: 5rem;
+}
+
+.kontak-box {
+    background-color: var(--second-bg);
+    border-radius: 0.5rem;
+    display: flex;
+    border: .2rem solid var(--warna-utama);
+}
+
+.kontak form {
+    text-align: center;
+    flex: 1 1 35rem;
+    padding: 5rem 2rem;
+}
+
+.kontak form .input-kontak {
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+    margin-top: 2rem;
+    border: .2rem solid var(--warna-utama);
+    border-radius: 0.3rem;
+}
+
+.kontak form .input-kontak i {
+    font-size: 2.5rem;
+}
+
+.kontak form .input-kontak input,
+.kontak form .input-kontak textarea {
+    font-size: 1.7rem;
+    padding: .8rem;
+    background:none;
+    color: var(--text);
+}
+
+.kontak form .input-kontak input::placeholder,
+.kontak form .input-kontak textarea::placeholder {
+    color: var(--text);
+}
+
+.kontak form .btn {
+    background-color: var(--warna-utama);
+    display: inline-block;
+    font-size: 1.7rem;
+    color: var(--text);
+    cursor: pointer;
+    margin: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.kontak form .btn:hover {
+    background-color: var(--bg);
+    color: var(--warna-utama);
+}
+
+/* Aside Style */ 
+main { 
+    padding: 5px;
+    display: flex;
+    gap: 1.5rem;
+}
+  
+#content {
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+  
+aside {
+    flex: 2;
+}
+
+.aside {
+    padding-top: 1.5rem;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-bg);
+    color: var(--text);
+}
+
+aside .aside .header-menu {
+    background-color: var(--warna-utama);
+    border-radius: 0.5rem;
+    width: 210px;
+    height: 50px;
+    display: flex;
+    margin-top: 8rem;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid var(--text);
+}
+
+aside .aside .header-menu p {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+aside header {
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 2.5rem;
+    font-size: 1.7rem;   
+}
+
+.aside h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.aside p {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.aside .box {
+    background-color: var(--text);
+    padding: 1rem 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.aside .box .box-content .menu-judul {
+    font-size: 1.7rem;
+    color: var(--bg);
+    padding-top: 2rem;   
+}
+
+.aside .box .box-content .menu-harga {
+    font-size: 1.7rem;
+    color: var(--bg);
+    padding-bottom: 2rem;
+}
+
+.box-content img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1.5rem;
+}
+
+/* Footer Style */
+footer {
+    background-color: var(--warna-utama);
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 0 2rem;
+}
+
+footer .social-media a {
+    font-size: 3rem;
+    color: var(--bg);
+    margin: 3rem;
+    margin-top: 3rem;
+    padding: 5rem 1rem;
+}
+
+footer .social-media a:hover {
+    color: var(--text);
+}
+
+footer .links {
+    margin-bottom: 1rem;
+}
+
+footer .links a {
+    font-size: 1.7rem;
+    color: var(--bg);
+    margin: 3rem;
+    padding: .7rem 1rem;
+    font-weight: 500;
+}
+
+footer .links a:hover {
+    color: var(--text);
+}
+
+footer .icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    padding: 1rem;
+    border-radius: .8rem;
+    color: var(--warna-utama);
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer .icon a:hover {
+    color: var(--bg);
+    background-color: var(--text);
+}
+
+footer .credit {
+    font-size: 1.7rem;
+}
+
+footer .credit a {
+    color: var(--bg);
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    } 
+
+    /* Wisata */
+    .wisata-container .wisata-box {
+        width: 300px;
+        height: 460px;
+    }
+
+    /* Aside */
+    .aside {
+        width: 220px;
+    }
+
+    aside .aside .header-menu {
+        width: 185px;
+        height: 40px;
+    }
+  }
+
+  /* Perangkat dengan lebar layar 1000 dan di bawahnya */
+  @media screen and (max-width: 1000px) {
+    html {
+        font-size: 50%;
+    }
+
+    /* Header */
+    .header .navbar a {
+        padding: 0.3rem 1.5rem;
+    }
+
+    /* Tentang */
+    .tentang img {
+        width: 70%;
+        margin-bottom: 2.5rem;
+        
+    }
+
+    /* Wisata */
+    .wisata-container .wisata-box {
+        width: 300px;
+    }
+
+    /* Aside */
+    main aside {
+        font-size: 55%;
+    } 
+
+    aside .aside .header-menu {
+        width: 170px;
+        height: 50px;
+    }
+
+    aside .aside .header-menu p {
+        font-size: 1.8rem;
+    }
+
+    .aside {
+        width: 200px;
+    }
+    .aside p {
+        font-size: 1.2rem;
+    }
+
+    .aside .box {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside .box .box-content {
+        justify-content: center;
+    }
+
+    /* Footer */
+    footer .social-media a {
+        font-size: 2.5rem;
+    }
+  }
+
+/* Perangkat dengan lebar layar 991px dan di bawahnya */
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 45%;
+    } 
+
+    /* Header */
+    .navbar {
+        position: absolute;
+        padding: .5rem;
+        margin-left: 25%;
+    }
+
+    .header .navbar a {
+        padding: 0.3rem .5rem;
+    }
+    
+    /* Tentang */
+    .tentang {
+        flex-direction: column-reverse;
+        margin-bottom: .1rem;
+    }
+    
+    .tentang h3 {
+        margin-bottom: 2rem;
+    }
+
+    .tentang img {
+        width: 100%;
+    }
+
+    .tentang .tentang-desk {
+        margin-bottom: 0px;
+        padding: .5rem;
+    }
+
+    .tentang .baris {
+        padding: 0.5rem;
+        display: flex;
+    }
+
+    /* Wisata */
+    .wisata {
+        margin-bottom: .1rem;
+    }
+    
+    .wisata .h2 {
+        font-size: 1.8rem;
+    }
+
+    .wisata-container .wisata-box {
+        width: 220px;
+        height: 400px;
+    }
+
+    /* Aside */
+    main aside {
+        font-size: 45%;
+    } 
+
+    aside .aside .header-menu {
+        width: 140px;
+        height: 30px;
+        align-items: center;
+    }
+
+    aside .aside .header-menu p {
+        font-size: 1.8rem;
+    }
+
+    .aside {
+        width: 170px;
+    }
+
+    .aside p {
+        font-size: 1.2rem;
+    }
+
+    .aside .box {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside .box .box-content {
+        justify-content: center;
+    }
+
+    /* Footer */
+    footer .social-media a {
+        font-size: 2.5rem;
+    }
+}
+
+  /* Perangkat dengan lebar layar 768px dan di bawahnya */
+  @media screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    } 
+
+    /* Header */
+    .navbar {
+        position: absolute;
+        padding: .5rem;
+        margin-left: 30%;
+    }
+
+    .header .navbar a {
+        padding: .3rem;
+        font-size: 15px;
+        margin: 1.2rem;
+    }
+
+    /* Tentang */
+    .tentang {
+        flex-direction: column-reverse;
+        margin-bottom: .1rem;
+       
+    }
+
+    .tentang h2 {
+        font-size: 2.5rem;
+    }
+
+    .tentang h3 {
+        font-size: 1.8rem;
+    }
+
+    .tentang .content-desk {
+        font-size: 1.5rem;
+    }
+
+    /* Wisata */
+    .wisata {
+        margin-bottom: .1rem;
+    }
+    
+    .wisata h2 {
+        font-size: 2.5rem;
+    }
+
+    .wisata-container .wisata-box {
+        width: 170px;
+        height: 430px;
+    }
+
+    .wisata-container .wisata-box img {
+        width: 100%;
+    }
+
+    .wisata-container .wisata-box h3 {
+        font-size: 1.8rem;
+    }
+
+    .wisata-container .wisata-box p {
+        font-size: 1.5rem;
+    }
+
+    /* Kontak */
+    .kontak h2 {
+        font-size: 2.5rem;
+    }
+
+    /* aside */
+    .aside {
+        width: 150px;
+    }
+
+    aside .aside .header-menu {
+        width: 130px;
+        height: 30px;
+        align-items: center;
+    }
+  }
+
+  /* Perangkat dengan lebar layar 617px dan di bawahnya */
+  @media screen and (max-width: 617px) {
+    html {
+        font-size: 40%;
+    } 
+
+    /* Header */
+    .navbar {
+        position: absolute;
+        padding: .2rem;
+        margin-left: 35%;
+    }
+
+    .header .navbar a {
+        padding: .3rem;
+        font-size: 12px;
+        margin: 1rem;
+    }
+
+    .header .logo {
+        font-size: 2.3rem;
+    }
+
+    /* Tentang */
+    .tentang h2 {
+        font-size: 2.3rem;
+    }
+
+    .tentang h3 {
+        font-size: 1.5rem;
+    }
+
+    .tentang p {
+        font-size: 1.3rem;
+    }
+
+    /* Wisata */
+    .wisata h2 {
+        font-size: 2.3rem;
+    }
+
+    .wisata p {
+        font-size: 1.3rem;
+    }
+    .wisata-container .wisata-box {
+        width: 110px;
+        height: 345px;
+    }
+
+    .wisata-container .wisata-box img {
+        width: 100%;
+    }
+
+    .wisata-container .wisata-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .wisata-container .wisata-box p {
+        font-size: 1.3rem;
+    }
+
+    /* Kontak */
+    .kontak h2 {
+        font-size: 2.3rem;
+    }
+
+    .kontak p,
+    .kontak .kontak-box .input-kontak input {
+        font-size: 1.3rem;
+    }
+
+    /* aside */
+    .aside {
+        width: 120px;
+    }
+
+    aside .aside .header-menu {
+        width: 105px;
+        height: 30px;
+        align-items: center;
+    }
+}
+
+  /* Perangkat dengan lebar layar 450px dan di bawahnya */
+  @media screen and (max-width: 450px) {
+   html {
+    font-size: 30%;
+   }
+
+   /* Header */
+   .navbar {
+    position: absolute;
+    padding: .1rem;
+    margin-left: 30%;
+    }
+
+    .header .navbar a {
+    padding: .3rem;
+    font-size: 10px;
+    margin: 1rem;
+    }
+
+    .header .logo {
+      font-size: 2.5rem;
+    }
+
+    /* Tentang */
+    .tentang p {
+    font-size: 1.3rem;
+    }
+
+    /* Wisata */
+    .wisata h2 {
+    font-size: 2.3rem;
+    }
+
+    .wisata p {
+    font-size: 1.3rem;
+    }
+
+    .wisata-container .wisata-box {
+    width: 95px;
+    height: 230px;
+    }
+
+    .wisata-container .wisata-box img {
+    width: 100%;
+    }
+
+    .wisata-container .wisata-box h3 {
+    font-size: 1.5rem;
+    }
+
+    .wisata-container .wisata-box p {
+    font-size: 1.3rem;
+    }
+
+    /* Kontak */
+    .kontak h2 {
+    font-size: 2.3rem;
+    }
+
+    .kontak p,
+    .kontak .kontak-box .input-kontak input {
+    font-size: 1.3rem;
+    }
+
+
+    /* aside */
+    .aside {
+    width: 100px;
+    }
+
+    aside .aside .header-menu {
+    width: 90px;
+    height: 20px;
+    align-items: center;
+    }
+  }
+
+  /* Perangkat dengan lebar layar 365px dan di bawahnya */
+  @media screen and (max-width: 365px) {
+    html {
+        font-size: 25%;
+       }
+    
+       /* Header */
+       .navbar {
+        position: absolute;
+        padding: .1rem;
+        margin-left: 30%;
+    }
+    
+    .header .navbar a {
+        padding: .3rem;
+        font-size: 7px;
+        margin: .8rem;
+    }
+    
+    .header .logo {
+        font-size: 2.5rem;
+    }
+    
+    /* Tentang */
+    .tentang p {
+        font-size: 1.3rem;
+    }
+    
+    /* Wisata */
+    .wisata h2 {
+        font-size: 2.3rem;
+    }
+    
+    .wisata p {
+        font-size: 1.3rem;
+    }
+    
+    .wisata-container .wisata-box {
+        width: 55px;
+        height: 270px;
+    }
+    
+    .wisata-container .wisata-box img {
+        width: 100%;
+    }
+    
+    .wisata-container .wisata-box h3 {
+        font-size: 1.5rem;
+    }
+    
+    .wisata-container .wisata-box p {
+        font-size: 1.3rem;
+    }
+    
+    /* Kontak */
+    .kontak h2 {
+        font-size: 2.3rem;
+    }
+    
+    .kontak p,
+    .kontak .kontak-box .input-kontak input {
+        font-size: 1rem;
+    }
+    
+    
+    /* aside */
+    .aside {
+        width: 75px;
+    }
+    
+    aside .aside .header-menu {
+        width: 65px;
+        height: 20px;
+        align-items: center;
+    }
+  }
