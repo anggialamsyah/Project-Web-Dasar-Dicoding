@@ -449,6 +449,29 @@ footer .credit a {
     margin-top: .5rem;
 }
 
+/* Perangkat dengan lebar layar 1300px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    } 
+
+    /* Wisata */
+    .wisata-container .wisata-box {
+        width: 300px;
+        height: 460px;
+    }
+
+    /* Aside */
+    .aside {
+        width: 220px;
+    }
+
+    aside .aside .header-menu {
+        width: 185px;
+        height: 40px;
+    }
+  }
+
 /* Perangkat dengan lebar layar 1200px dan di bawahnya */
 @media screen and (max-width: 1200px) {
     html {
