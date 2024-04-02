@@ -449,8 +449,8 @@ footer .credit a {
     margin-top: .5rem;
 }
 
-/* Perangkat dengan lebar layar 1300px dan di bawahnya */
-@media screen and (max-width: 1200px) {
+/* Perangkat dengan lebar layar 1400px dan di bawahnya */
+@media screen and (max-width: 1400px) {
     html {
         font-size: 55%;
     } 
